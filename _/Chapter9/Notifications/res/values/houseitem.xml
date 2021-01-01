@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="houseitem">
+	    <item name="android:layout_width">fill_parent</item> 
+	    <item name="android:layout_height">wrap_content</item> 
+	    <item name="android:background">@drawable/housebg</item>
+	    <item name="android:paddingLeft">55px</item>
+	    <item name="android:height">50px</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_marginBottom">10dp</item>
+    </style>
+</resources>

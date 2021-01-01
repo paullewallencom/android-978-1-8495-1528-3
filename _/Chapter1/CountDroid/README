@@ -1,0 +1,14 @@
+Android 3.0 Animation, a Beginner's Guide
+Chapter 1 Example Application
+Counting Calculator
+
+Author: Alex Shaw
+Publisher: Packt Publishing
+
+Eclipse installation instructions:
+
+1.  Unzip this folder to a location on your hard disk
+2.  In Eclipse, select Import... from the File menu
+3.  Select "Existing Projects Into Workspace"
+4.  Set the location of this folder as the root directory
+5.  Click Finish 

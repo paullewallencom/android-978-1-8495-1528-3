@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <ViewFlipper android:id="@+id/pages"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_weight="2"
+              android:inAnimation="@anim/slidein" 
+        android:outAnimation="@anim/slideout"
+      >
+            <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:text="This is a ball.  It is a red ball."
+        />
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/rollingball"
+          android:src="@drawable/ball" 
+          android:paddingLeft="60dp"
+        />
+        <TextView  
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:text=
+            "This red ball is rolling.  Watch the red ball roll."
+        />
+      </LinearLayout> 
+            <LinearLayout
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:text="Look!  This is a red ball too."
+        />
+        <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/bouncingball"
+          android:src="@drawable/ball" 
+          android:paddingLeft="60dp"
+        />
+        <TextView 
+          android:layout_width="fill_parent" 
+          android:layout_height="wrap_content" 
+          android:text=
+          "The ball is bouncing.  See the ball bounce."
+        />
+      </LinearLayout>
+            <TextView
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="The end.  Now go and tidy your room."
+      />
+      
+    </ViewFlipper> 
+    <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+    >
+      <Button
+        android:id="@+id/prev"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@android:drawable/ic_media_previous"
+        android:text="Previous" />
+      <Button
+        android:id="@+id/next"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableRight="@android:drawable/ic_media_next" 
+        android:text="Next" />
+    </LinearLayout>
+  </LinearLayout>

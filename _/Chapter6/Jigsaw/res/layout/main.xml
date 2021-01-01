@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jigsawbody"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.packt.animation.jigsaw.RaisableImageView
+        android:id="@+id/jigsawTopLeft"
+        android:src="@drawable/winter_leaves_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.packt.animation.jigsaw.RaisableImageView
+        android:id="@+id/jigsawTopRight"
+        android:src="@drawable/winter_leaves_2"
+        android:layout_toRightOf="@+id/jigsawTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.packt.animation.jigsaw.RaisableImageView
+        android:id="@+id/jigsawBottomLeft"
+        android:src="@drawable/winter_leaves_3"
+        android:layout_below="@+id/jigsawTopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.packt.animation.jigsaw.RaisableImageView
+        android:id="@+id/jigsawBottomRight"
+        android:src="@drawable/winter_leaves_4"
+        android:layout_toRightOf="@+id/jigsawBottomLeft"
+        android:layout_below="@+id/jigsawTopRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
